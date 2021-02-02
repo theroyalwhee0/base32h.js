@@ -1,0 +1,16 @@
+[actions]
+perf='node ./'
+report_gc='''
+  node \
+    --expose-gc \
+    --nouse_idle_notification \
+    --max-old-space-size=1000 \
+    --max-semi-space-size=500 \
+    --noconcurrent_sweeping \
+    . \
+  && more ./report.log
+'''
+report='''
+  node . \
+  && more ./report.log
+'''
