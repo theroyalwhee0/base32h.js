@@ -1,5 +1,6 @@
 [actions]
 perf='node ./'
+# Node GC: https://github.com/nodejs/help/issues/462
 report_gc='''
   node \
     --expose-gc \

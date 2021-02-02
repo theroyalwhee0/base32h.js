@@ -2,7 +2,6 @@
  * Imports.
  */
 const { PerformanceObserver, performance } = require('perf_hooks');
-const { start } = require('repl');
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

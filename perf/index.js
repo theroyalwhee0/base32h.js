@@ -11,7 +11,7 @@ async function main() {
     idx: 0,
     measurements: {},
   };
-  const ROUNDS = 4;
+  const ROUNDS = 10;
   for(let round=0; round < ROUNDS; round++) {
     context.round = round;
     console.info(`> Round ${round+1} of ${ROUNDS}`);
